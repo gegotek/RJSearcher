@@ -1,0 +1,61 @@
+# Profil kandydata dla RemoteJob AI. Edytuj pod siebie.
+
+summary = """
+Programista C++/Rust i Python z zainteresowaniem AI/ML (LLM, inference, systemy wydajnościowe).
+Szukam pracy zdalnej na poziomie mid/senior.
+"""
+
+remote_only = true
+match_threshold = 60
+
+# Frazy wysyłane do API źródeł, które wspierają wyszukiwanie.
+search_terms = ["rust", "c++", "python", "machine learning", "llm"]
+
+# Oferta zawierająca którąś z tych fraz dostaje 0 punktów.
+exclude = ["internship", "unpaid", "junior php", "wordpress"]
+
+# term = fraza (bez rozróżniania wielkości liter), weight = punkty.
+# Trafienie w tytule liczy się podwójnie. Wynik jest obcięty do 100.
+[[keywords]]
+term = "rust"
+weight = 30
+
+[[keywords]]
+term = "c++"
+weight = 30
+
+[[keywords]]
+term = "cpp"
+weight = 20
+
+[[keywords]]
+term = "python"
+weight = 20
+
+[[keywords]]
+term = "llm"
+weight = 20
+
+[[keywords]]
+term = "ai"
+weight = 15
+
+[[keywords]]
+term = "machine learning"
+weight = 15
+
+[[keywords]]
+term = "pytorch"
+weight = 10
+
+[[keywords]]
+term = "inference"
+weight = 10
+
+[[keywords]]
+term = "senior"
+weight = 5
+
+[[keywords]]
+term = "backend"
+weight = 5
